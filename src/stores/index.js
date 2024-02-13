@@ -1,6 +1,7 @@
 import { store } from 'quasar/wrappers'
 import { createPinia } from 'pinia'
 import PiniaLogger from 'pinia-logger'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 /*
  * If not building with SSR mode, you can
@@ -19,6 +20,7 @@ export default store((/* { ssrContext } */) => {
   pinia.use(PiniaLogger({
     expanded: false
   }))
+  pinia.use(piniaPluginPersistedstate)
 
   return pinia
 })

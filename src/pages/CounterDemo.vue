@@ -6,7 +6,7 @@ const counterStore = useCounterStore()
 
 onMounted(() => {
   counterStore.getPostCounts()
-  counterStore.increment()
+  // counterStore.increment()
 })
 </script>
 

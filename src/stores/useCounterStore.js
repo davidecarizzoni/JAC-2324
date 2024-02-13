@@ -22,4 +22,6 @@ export const useCounterStore = defineStore('counter', () => {
   }
 
   return { count, name, postCount, doubleCount, increment, getPostCounts }
+}, {
+  persist: true
 })
