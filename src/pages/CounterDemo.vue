@@ -4,7 +4,10 @@ import { onMounted } from 'vue'
 
 const counterStore = useCounterStore()
 
-onMounted(counterStore.getPostCounts)
+onMounted(() => {
+  counterStore.getPostCounts()
+  counterStore.increment()
+})
 </script>
 
 <template>

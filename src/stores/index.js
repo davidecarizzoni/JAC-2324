@@ -1,5 +1,6 @@
 import { store } from 'quasar/wrappers'
 import { createPinia } from 'pinia'
+import PiniaLogger from 'pinia-logger'
 
 /*
  * If not building with SSR mode, you can
@@ -15,6 +16,9 @@ export default store((/* { ssrContext } */) => {
 
   // You can add Pinia plugins here
   // pinia.use(SomePiniaPlugin)
+  pinia.use(PiniaLogger({
+    expanded: false
+  }))
 
   return pinia
 })
