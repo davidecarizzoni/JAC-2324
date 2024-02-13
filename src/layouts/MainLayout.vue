@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          Quasar App {{ counterStore.count }}
+          Quasar App {{ counterStore.postCount }}
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
